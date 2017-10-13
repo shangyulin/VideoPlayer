@@ -1,0 +1,33 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_single_bg"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/title"
+            layout="@layout/title" />
+
+        <ListView
+            android:id="@+id/play_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/bottom"
+            android:layout_below="@id/title" />
+
+        <include
+            android:id="@+id/bottom"
+            layout="@layout/bottom" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#0f0"/>
+
+</android.support.v4.widget.DrawerLayout>

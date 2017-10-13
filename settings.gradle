@@ -1,0 +1,1 @@
+include ':app', ':SMusic', ':RadioDemo', ':vitamio'
